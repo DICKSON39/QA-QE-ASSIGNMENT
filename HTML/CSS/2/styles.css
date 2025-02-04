@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background: #e3edf7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    background: aliceblue;
+    box-shadow: aliceblue;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .title {
+    color: gray;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+ 
+  
+  button {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+ 
+  
