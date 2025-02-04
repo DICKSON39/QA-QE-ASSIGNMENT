@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .selection button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .text ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .text ul li {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .details form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .details label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .details input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .details button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .register, .Shipping {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .register button, .Shipping button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .order-summary {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .product-details h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .quantity-controls button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .quantity-controls span {
+            margin: 0 10px;
+        }
+
+        .discount-code {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .discount-code input {
+            width: 70%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .discount-code button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .summary-details div, .total div {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <div class="About">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="selection">
+        <button class="log">Login</button>
+        <button class="reg">Register</button>
+     </div>
+   </nav>
+
+   <section>
+    <div>
+        <div class="text">
+            <ul>
+                <li>Account</li>
+                <li>Shipping</li>
+                <li>Payment</li>
+            </ul>
+        </div>
+        <div class="details">
+            <form>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="register">
+            <p>Register for account</p>
+            <button>Register</button>
+        </div>
+        <div class="Shipping">
+            <p>Cancel order</p>
+            <button>Shipping details</button>
+        </div>
+    </div>
+
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="product-image">
+            <img src="/HTML\CSS\2\4\image\Screenshot 2025-02-04 215353.png" alt="Sony wireless headphones" width="200" height="100">
+        </div>
+        <div class="product-details">
+            <h3>Sony wireless headphones</h3>
+            <span class="price">£320.45</span>
+        </div>
+        <div class="quantity-controls">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+        <div class="discount-code">
+            <input type="text" placeholder="Gift Card / Discount code">
+            <button>Apply</button>
+        </div>
+        <div class="summary-details">
+            <div><span>Sub total</span><span>£316.55</span></div>
+            <div><span>Tax</span><span>£3.45</span></div>
+            <div><span>Shipping</span><span style="color: green;">Free</span></div>
+        </div>
+        <div class="total">
+            <div><span>Total</span><span>£320.45</span></div>
+        </div>
+    </div>
+   </section>
+
+</body>
+</html>
